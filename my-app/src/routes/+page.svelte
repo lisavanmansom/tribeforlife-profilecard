@@ -282,8 +282,12 @@
         p {font: italic 500 1.4em "ApexNewTrial", sans-serif;}
         p, h2 {padding: .35em 0.35em 0 .35em;}
     }
-
     @media (min-width:900px) {
+        h2 {font: italic 700 2.1em "ApexNewTrial", sans-serif;}
+        p {font: italic 500 1.6em "ApexNewTrial", sans-serif;}
+    }
+
+    @media (min-width:1000px) {
         h2 {font: italic 700 2.2em "ApexNewTrial", sans-serif;}
         p {font: italic 500 1.8em "ApexNewTrial", sans-serif;}
     }
