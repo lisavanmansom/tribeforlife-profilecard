@@ -14,10 +14,19 @@
             width="250" height="250"  alt="" loading="auto">
         </picture>
 
-        <div class="item-1"></div>
-        <div class="item-2"></div>
-        <div class="item-3"></div>
-        <div class="item-4"></div>
+        <div class="i-g-1">
+            <div class="item-1"></div><div class="item-1"></div><div class="item-1"></div><div class="item-1"></div><div class="item-1"></div><div class="item-1"></div>
+        </div>
+        <div class="i-g-2">
+            <div class="item-2"></div><div class="item-2"></div><div class="item-2"></div><div class="item-2"></div><div class="item-2"></div><div class="item-2"></div>
+        </div>
+        <div class="i-g-3">
+            <div class="item-3"></div><div class="item-3"></div><div class="item-3"></div><div class="item-3"></div><div class="item-3"></div><div class="item-3"></div>
+        </div>
+        <div class="i-g-4">
+            <div class="item-4"></div><div class="item-4"></div><div class="item-4"></div><div class="item-4"></div><div class="item-4"></div><div class="item-4"></div>
+        </div>
+            
     </header>
 
     <section>
@@ -60,6 +69,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: end;
+        position: relative;
+        overflow: hidden;
     }
 
     h1 {
@@ -70,10 +81,12 @@
         color: var(--bat);
         -webkit-text-stroke-width: 1.5px;
         -webkit-text-stroke-color: var(--b);
+        z-index: 110;
     }
 
     picture {
         order: -1;
+        z-index: 10;
     }
 
     img {
@@ -81,6 +94,100 @@
         width: 100%;
         object-fit: contain;
     }
+
+    
+    .i-g-1, .i-g-2,
+    .i-g-3, .i-g-4 {
+        width: 8em;
+        height: 40em;
+        display: flex;
+        position: absolute;
+    }
+
+    .i-g-1 {
+        animation: move1 infinite 2s;
+        transform: matrix3d(            
+            1,      0,     -0.87,   0,
+            0,      -1,    0,       0.1,
+            1,      0,     0.5,     0,
+            4.98,   -50,     0,       11   );
+    }
+
+    .i-g-2 {
+        animation: move2 infinite 2s;
+        transform: matrix3d(                                
+            1,      0,     -0.87,   0,
+            0,      -1,    0,       1,
+            1,      0,     0,     0,
+            4.98,   -70,     0,       11   );
+    }
+
+
+    .i-g-3 {
+        animation: move3 infinite 2s;
+        transform: matrix3d(                                
+            1,      10,     -0.87,   0,
+            6,      5,    0,       0.1,
+            1,      0,     0.5,     0,
+            0,   0,     0,       8    );
+    }
+
+    .i-g-4 {
+        animation: move4 infinite 2s;
+        transform: matrix3d(                                
+            1,      10,     -0.87,   0,
+            -6,      5,    0,       0.1,
+            1,      0,     0.5,     0,
+            0,   0,     0,       8    );
+    }
+
+
+    .item-1, .item-2,
+    .item-3, .item-4 {
+        height: 100%;
+        width: 10em;
+        border: .15em solid var(--b);
+    }
+
+
+
+    @keyframes move1 {
+        50% {
+            transform: matrix3d(                                
+            1,      0,     -0.87,   0,
+            0,      -1,    0,       1,
+            1,      0,     0,     0,
+            4.98,   -70,     0,       11   );
+        }
+    }
+    @keyframes move2 {
+        50% {
+            transform: matrix3d(                                
+            1,      0,     -0.87,   0,
+            0,      -1,    0,       0.1,
+            1,      0,     0.5,     0,
+            4.98,   -50,     0,       11    );
+                }
+    }
+    @keyframes move3 {
+        50% {
+            transform: matrix3d(                                
+                1,      10,     -0.87,   0,
+            -6,      5,    0,       0.1,
+            1,      0,     0.5,     0,
+            0,   0,     0,       8    );
+                }
+    }
+    @keyframes move4 {
+        50% {
+            transform: matrix3d(                                
+                1,      10,     -0.87,   0,
+            6,      5,    0,       0.1,
+            1,      0,     0.5,     0,
+            0,   0,     0,       8     );
+                }
+    }
+
 
     section {
         background-color: var(--bat);
