@@ -253,7 +253,7 @@
         background: rgba(255, 83, 218, 0.75);
         grid-column: 7 / -1;
         grid-row: 16 / -1;
-        z-index: 15;
+        z-index: 25;
     }
 
     .item-5 {
