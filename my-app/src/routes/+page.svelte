@@ -22,18 +22,117 @@
 
     <section>
         <h2>About me</h2>
-        <p>I am Lisa, a netherland based frontend designer. I am keen on funky websites, animations, eclastic designs, literature and art.</p>
-        <p>Likes / a clockwork orange / earth, wind and fire / bibimbap / Zoolander / concerts / gin tonics </p>
-        <p>Dislikes / insects / george orwell's 1984 / anise lattes / cold weather </p>
+        <p class="p-1">I am Lisa, a netherland based frontend designer. I am keen on funky websites, animations, eclastic designs, literature and art.</p>
+        <p class="p-2"><span>Likes /</span> a clockwork orange / earth, wind and fire / bibimbap / Zoolander / concerts / gin tonics</p>
+        <p class="p-3"><span>Dislikes /</span> insects / george orwell's 1984 / anise lattes / cold weather</p>
+
+        <div class="item-5"></div>
+        <div class="item-6"></div>
+        <div class="item-7"></div>
     </section>
 </main>
 
 <style>
 
     main {
-        background-color: var(--bkdkdkd);
         width: 100%;
         min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow-y: hidden;
+
+        background-image: url("/Mojave.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* header styling */
+    header {
+        background-image: url("/tranquil-desert.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+    }
+
+    h1 {
+        order: 0;
+        font: italic 700 6em "ApexNewTrial", sans-serif;
+        inline-size: 4.1em;
+        text-align: center;
+        color: var(--bat);
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: var(--b);
+    }
+
+    picture {
+        order: -1;
+    }
+
+    img {
+        height: 26em;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    section {
+        background-color: var(--bat);
+        color: var(--b);
+    }
+
+    header, section {
+        height: 40em;
+        width: 75%;
+        border: .21em solid var(--w);
+    }
+
+    /* secion styling */
+    h2 {
+        background: rgba(162, 91, 255, 0.75);
+        font: italic 700 2em "ApexNewTrial", sans-serif;
+    }
+
+    h2, p,
+    .item-5, .item-6,
+    .item-7 {
+        border-radius: 16px;
+        border: .1em solid var(--b);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(13.6px);
+        -webkit-backdrop-filter: blur(13.6px);
+    }
+
+    p {
+        font: italic 300 1.8em "ApexNewTrial", sans-serif;
+    }
+
+    span {
+        font-weight: 400;
+    }
+
+    .p-1 {
+        background: rgba(255, 161, 29, 0.75);
+    }
+
+    .p-2 {
+        background: rgba(150, 240, 254, 0.75);
+    }
+
+    .p-3 {
+        background: rgba(255, 83, 218, 0.75);
+    }
+
+    @media (min-width:700px) {
+        main {flex-direction: row;}
+        header {width: 50%;}
+        section {width: 50%;}
     }
 
 </style>

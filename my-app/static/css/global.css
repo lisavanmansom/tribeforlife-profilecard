@@ -4,7 +4,8 @@
     --heqet: #EF4469;
     --wadjet: #96F0FE;
     --nekhbet: #A25BFF;
-    --bkdkdkd: #252422;
+    --sobek :rgba(227, 227, 227, 0.43);
+    --b: #252422;
   }
 
   @font-face {
@@ -38,13 +39,13 @@
   }
 
   @font-face {
-    font-family: Griffiths;
+    font-family: ApexNewTrial;
     src: url(../fonts/ApexNewTrial-Medium-BF66724ea5881a1.otf);
     font-weight: 200;
   }
 
   @font-face {
-    font-family: Griffiths;
+    font-family: ApexNewTrial;
     src: url(../fonts/ApexNewTrial-MediumItalic-BF66724ea550dd2.otf);
     font-weight: 250;
   }
