@@ -1,0 +1,61 @@
+:root {
+    --primary: #FFFCF2;
+    --bat: #BDF574;
+    --heqet: #EF4469;
+    --wadjet: #96F0FE;
+    --nekhbet: #A25BFF;
+    --quaternary: #252422;
+  }
+
+  @font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Black.ttf);
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Light.ttf);
+    font-weight: 100;
+  }
+
+  @font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Medium.ttf);
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+    font-weight: 200;
+  }
+
+  @font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-SemiBold.ttf);
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: Griffiths;
+    src: url(../fonts/ApexNewTrial-Medium-BF66724ea5881a1.otf);
+    font-weight: 200;
+  }
+
+  @font-face {
+    font-family: Griffiths;
+    src: url(../fonts/ApexNewTrial-MediumItalic-BF66724ea550dd2.otf);
+    font-weight: 250;
+  }
+
+  * {
+    font-family: Poppins;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+  }
+
+*::-webkit-scrollbar {display: none;}
