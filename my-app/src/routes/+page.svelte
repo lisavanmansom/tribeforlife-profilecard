@@ -8,9 +8,9 @@
             {data.person.surname}</h1>
 
         <picture>
-            <source srcset="../Onderwerp-4?format=avif 500w" type="images/avif" sizes="(max-width: 1439px) 56vw, 40vw">
-            <source srcset="../Onderwerp-4?format=webp 500w" type="images/webp" sizes="(max-width: 1439px) 56vw, 40vw">
-            <img src="../Onderwerp-4.png" 
+            <source srcset="../Onderwerp-5?format=avif 500w" type="images/avif" sizes="(max-width: 1439px) 56vw, 40vw">
+            <source srcset="../Onderwerp-5?format=webp 500w" type="images/webp" sizes="(max-width: 1439px) 56vw, 40vw">
+            <img src="../Onderwerp-5.png" 
             width="250" height="250"  alt="" loading="auto">
         </picture>
 
@@ -87,6 +87,8 @@
     picture {
         order: -1;
         z-index: 10;
+        margin: 0 -3em -20em 0;
+        transform: scale(2.1);
     }
 
     img {
@@ -190,7 +192,7 @@
 
 
     section {
-        background-color: var(--bat);
+        background-color: rgba(255, 255, 255, 0.14);
         color: var(--b);
 
         display: grid;
@@ -277,8 +279,8 @@
 
     @media (min-width:700px) {
         main {flex-direction: row;}
-        header {width: 47%;}
-        section {width: 47%;}
+        header {width: 40%;}
+        section {width: 40%;}
         h2 {font: italic 700 2.2em "ApexNewTrial", sans-serif;}
         p {font: italic 500 1.8em "ApexNewTrial", sans-serif;}
     }
