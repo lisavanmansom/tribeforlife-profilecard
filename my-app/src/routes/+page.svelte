@@ -151,8 +151,6 @@
         border: .15em solid var(--b);
     }
 
-
-
     @keyframes move1 {
         50% {
             transform: matrix3d(                                
@@ -189,7 +187,6 @@
             0,   0,     0,       8     );
                 }
     }
-
 
     section {
         background-color: rgba(255, 255, 255, 0.14);
@@ -281,6 +278,12 @@
         main {flex-direction: row;}
         header {width: 40%;}
         section {width: 40%;}
+        h2 {font: italic 700 2em "ApexNewTrial", sans-serif;}
+        p {font: italic 500 1.4em "ApexNewTrial", sans-serif;}
+        p, h2 {padding: .35em 0.35em 0 .35em;}
+    }
+
+    @media (min-width:900px) {
         h2 {font: italic 700 2.2em "ApexNewTrial", sans-serif;}
         p {font: italic 500 1.8em "ApexNewTrial", sans-serif;}
     }
