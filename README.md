@@ -1,6 +1,6 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Titel
+# TRIBE4LIFE PROFILECARD
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 
 ## Inhoudsopgave
@@ -17,8 +17,13 @@
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
+<img width="1000" alt="Scherm­afbeelding 2024-09-16 om 12 15 21" src="https://github.com/user-attachments/assets/2c86c795-c5af-4928-a879-5a7089d37497">
+
+
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+Voor dit visitekaartje gebruik ik het framework Sveltekit en haal ik data op uit Directus.
+
+De HTML is opgedeeld in `<section>` met daarin een `<h>`'s, `<p>`'s en `<div>`'s. Met CSS keyframes en matrix3d / matrix heb ik verschillende animaties gemaakt. Ik ben mobile first begonnen, en het kaartje is responsive tot aan het kleinste scherm van 350px.
 
 ## Installatie
 Volg onderstaande stappen om zelf aan deze code te werken:
