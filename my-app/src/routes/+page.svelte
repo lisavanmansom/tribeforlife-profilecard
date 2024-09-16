@@ -7,7 +7,7 @@
         <h1>{data.person.name}
             {data.person.surname}</h1>
 
-        <picture>
+        <picture class="i-1">
             <source srcset="../Onderwerp-5?format=avif 500w" type="images/avif" sizes="(max-width: 1439px) 56vw, 40vw">
             <source srcset="../Onderwerp-5?format=webp 500w" type="images/webp" sizes="(max-width: 1439px) 56vw, 40vw">
             <img src="../Onderwerp-5.png" 
@@ -38,6 +38,13 @@
         <div class="item-5"></div>
         <div class="item-6"></div>
         <div class="item-7"></div>
+
+        <picture class="i-2">
+            <source srcset="../386?format=avif 500w" type="images/avif" sizes="(max-width: 1439px) 56vw, 40vw">
+            <source srcset="../386?format=webp 500w" type="images/webp" sizes="(max-width: 1439px) 56vw, 40vw">
+            <img src="../386.png" 
+            width="250" height="250"  alt="" loading="auto">
+        </picture>
     </section>
 </main>
 
@@ -84,7 +91,7 @@
         z-index: 110;
     }
 
-    picture {
+    .i-1 {
         order: -1;
         z-index: 10;
         margin: 0 -3em -20em 0;
@@ -240,6 +247,7 @@
         grid-column: 10 / -1;
         grid-row: 4 / 15;
         z-index: 15;
+        transition: all 1s ease-out;
     }
 
     .p-2 {
@@ -247,6 +255,7 @@
         grid-column: 1 / 9;
         grid-row: 7 / 18;
         z-index: 20;
+        transition: all 1s ease-out;
     }
 
     .p-3 {
@@ -254,7 +263,11 @@
         grid-column: 7 / -1;
         grid-row: 16 / -1;
         z-index: 25;
+        transition: all 1s ease-out;
     }
+    .p-1:hover {transform: scale(1.2);}
+    .p-2:hover {transform: scale(1.2);}
+    .p-3:hover {transform: scale(1.2);}
 
     .item-5 {
         background: rgba(56, 23, 221, 0.75);
@@ -272,6 +285,20 @@
         background: rgba(255, 230, 0, 0.75);
         grid-column: 1 / 11;
         grid-row: 2 / 10;
+    }
+
+    .i-2 {
+        position: absolute;
+        z-index: 30;
+        transform: matrix(3, 0, 0, 3, 0, 1100);
+        animation: position1 infinite 5s;
+        animation-delay: 30s;
+        pointer-events: none;
+    }
+
+    @keyframes position1 {
+        25% {transform:matrix(3.5, 0, 0, 3.5, 0, 0)}
+        100% {transform:matrix(3, 0, 0, 3, 0, -1600)}
     }
 
     @media (min-width:700px) {
