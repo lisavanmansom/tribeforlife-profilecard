@@ -292,7 +292,7 @@
         z-index: 30;
         transform: matrix(3, 0, 0, 3, 0, 1100);
         animation: position1 infinite 5s;
-        animation-delay: 30s;
+        animation-delay: 20s;
         pointer-events: none;
     }
 
