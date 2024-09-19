@@ -13,6 +13,10 @@
   * [Licentie](#licentie)
 
 ## Beschrijving
+
+Mijn visitekaartje laat zien wie ik ben, wat ik leuk vind en wat ik niet leuk vind. Er staat een korte biografie met daarin belangrijke informatie zoals woonplaats en leeftijd. Voor dit visitekaartje wou ik een eclactisch design toepassen, hierdoor kon ik mijzelf uitdagen met grid, matrix3d() en animaties in het kaartje. Als inspiratie had ik tijdschriften uit Azië gebruikt waarin vintage en cyberpunk terugkwam wat ik heb gecombineerd met mijn eigen stijl.
+
+
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
@@ -38,7 +42,14 @@ Volg onderstaande stappen om zelf aan deze code te werken:
 
 ## Gebruik
 
+Om deze pagina [livelink](https://tribeforlife-profilecard.vercel.app/) te bekijken kan je klikken op de livelink in de About sectie van deze repository.
+
+Op dit visitekaartje kan je lezen wie ik ben en waar ik vandaan kom, en kan je klikken op verschillende links om te naar mijn Github, Codepen of Instagram te gaan.
+
 ## Bronnen
+* https://kit.svelte.dev
+* https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_getting_started
+* https://docs.directus.io/blog/getting-started-directus-sveltekit.html
 
 ## Licentie
 
